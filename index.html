@@ -132,6 +132,72 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div id="navbar-example-2" style="position: relative;">
+          <nav id="navbar-example2" class="navbar navbar-dark bg-success px-3">
+            <a class="navbar-brand text-white fw-bolder" href="#">India</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#scrollspyHeading1">New Delhi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#scrollspyHeading2">Mumbai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#scrollspyHeading3">Noida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#scrollspyHeading4">Bengluru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#scrollspyHeading5">Pune</a>
+              </li>
+
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+            tabindex="0" style="height: 300px; overflow-y: scroll;">
+            <h4 id="scrollspyHeading1">Delhi the National City</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere quae fugiat dolores quod laborum
+              esse est vero accusantium! Error nesciunt aliquam totam? Nam doloribus quod nostrum quam facere libero
+              reprehenderit consequatur dolorem repellendus magnam mollitia culpa at sapiente repudiandae modi deleniti
+              exercitationem delectus unde velit, accusamus dolore distinctio excepturi quaerat? Aliquid, temporibus
+              deleniti. Deserunt in earum sapiente optio provident dolorum aliquam animi ipsam numquam eius possimus, id
+              corrupti nesciunt recusandae beatae expedita enim obcaecati?</p>
+            <h4 id="scrollspyHeading2">Mumbai The Financial city</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere quae fugiat dolores quod laborum
+              esse est vero accusantium! Error nesciunt aliquam totam? Nam doloribus quod nostrum quam facere libero
+              reprehenderit consequatur dolorem repellendus magnam mollitia culpa at sapiente repudiandae modi deleniti
+              exercitationem delectus unde velit, accusamus dolore distinctio excepturi quaerat? Aliquid, temporibus
+              deleniti. Deserunt in earum sapiente optio provident dolorum aliquam animi ipsam numquam eius possimus, id
+              corrupti nesciunt recusandae beatae expedita enim obcaecati?</p>
+            <h4 id="scrollspyHeading3">Noida IT hub of North</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere quae fugiat dolores quod laborum
+              esse est vero accusantium! Error nesciunt aliquam totam? Nam doloribus quod nostrum quam facere libero
+              reprehenderit consequatur dolorem repellendus magnam mollitia culpa at sapiente repudiandae modi deleniti
+              exercitationem delectus unde velit, accusamus dolore distinctio excepturi quaerat? Aliquid, temporibus
+              deleniti. Deserunt in earum sapiente optio provident dolorum aliquam animi ipsam numquam eius possimus, id
+              corrupti nesciunt recusandae beatae expedita enim obcaecati?</p>
+            <h4 id="scrollspyHeading4">Bengluru IT hub of South</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere quae fugiat dolores quod laborum
+              esse est vero accusantium! Error nesciunt aliquam totam? Nam doloribus quod nostrum quam facere libero
+              reprehenderit consequatur dolorem repellendus magnam mollitia culpa at sapiente repudiandae modi deleniti
+              exercitationem delectus unde velit, accusamus dolore distinctio excepturi quaerat? Aliquid, temporibus
+              deleniti. Deserunt in earum sapiente optio provident dolorum aliquam animi ipsam numquam eius possimus, id
+              corrupti nesciunt recusandae beatae expedita enim obcaecati?</p>
+            <h4 id="scrollspyHeading5">Pune IT hub of Mid India
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere quae fugiat dolores quod laborum
+              esse est vero accusantium! Error nesciunt aliquam totam? Nam doloribus quod nostrum quam facere libero
+              reprehenderit consequatur dolorem repellendus magnam mollitia culpa at sapiente repudiandae modi deleniti
+              exercitationem delectus unde velit, accusamus dolore distinctio excepturi quaerat? Aliquid, temporibus
+              deleniti. Deserunt in earum sapiente optio provident dolorum aliquam animi ipsam numquam eius possimus, id
+              corrupti nesciunt recusandae beatae expedita enim obcaecati?</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- About section end from here -->
 
@@ -411,7 +477,12 @@
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-example2'
     })
+
+
   </script>
 </body>
 
